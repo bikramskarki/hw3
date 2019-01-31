@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+background-color: linen;
+ 
+}
+
+.checked {
+  color: orange;
+}
+
+.wrapper{
+    width : 90%;
+    margin: 10px 100px;
+    
+}
+
+.info{
+
+  border : solid 2px #876789;
+  width : 65%;
+}
+
+.softwarepic img{
+    width  : 90% ;
+    height : auto ;
+    border : solid 4px #123212;
+    margin-left : 70px;
+}
+
+h1{
+  text-align: center;
+}
+</style>
+</head>
+<body>
+  <div class="wrapper">
+    <h1>Software Review of Adobe PhotoShop</h1>
+
+    <div class="softwarepic">
+      <%= image_tag("pphotoshop.png", :alt => "Software Review") %>
+    </div>
+    <p> Adobe Photoshop is a raster graphics editor developed and published by Adobe Inc. for macOS and Windows. Photoshop was created in 1988 by Thomas and John Knoll.
+    </p>
+    
+    <h2> Important Facts :</h2>
+      <ul>
+         <li>License: Trialware, SaaS</li>
+         <li> Initial release date: February 19, 1990</li>
+         <li> Stable release: CC 2019 (20.0.2.22448) (January 10, 2019; 11 days ago)</li>
+         <li> Operating system: Windows and macOS</li> 
+         <li> Developed by: Adobe Inc.</li> 
+         <li> Programming languages: C++, Pascal  </li>    
+      
+      </ul> 
+
+      <h2>Star Rating</h2>
+         <span class="fa fa-star checked"></span>
+         <span class="fa fa-star checked"></span>
+         <span class="fa fa-star checked"></span>
+         <span class="fa fa-star"></span>
+         <span class="fa fa-star"></span>
+
+      <div>
+
+      <div>
+       <p> With its new brush features, Adobe Photoshop CC offers users the capability to create clearer lines and smoother brush strokes. As they work with the brush, pencil, mixer brush, or eraser tools in the software, they will benefit from a smoothing control which allow them to enter a value from 0 to 100. The higher the value they enter, the more smoothness will be added to their brush strokes.
+
+  </p>
+  <p>
+Adobe Photoshop also enables them to quickly share their projects and creations directly from the app. They will be able to share them with several services and social media channels such as Facebook, Twitter, OneNote, Skype, and Feedback Hub.
+The software has some minor glitches when heavy processing is required. I feel the need of lowering the price of photoshop for learning
+students. It could have been beter if they charge more for business purpose people. 
+
+But I must admit there is high learning curve in the software. It can be used by anyone who has keen interest in images.The updates include a variety of new and enhanced features across the board, and are great entry-level programs into both photo and video editing.
+
+It’s that exciting time of year again when Adobe releases the newest version of Photoshop Elements. Most of you know that I’m a longtime and loyal fan of Photoshop Elements and it’s the program I use the most for digital scrapbooking and design work. I love it.
+
+While there are many ways to accomplish basic image and video editing tasks, the latest Adobe Elements apps are all about making your life easier.
+
+  </p>
+      </div>
+      
+
+      <form action="">
+      <fieldset>
+       <legend><h2> Adobe Photoshop Software Review Form </h2></legend>
+        First name  <input name="firstname" type="text">
+        &nbsp; &nbsp; &nbsp;
+        Last name  <input name="firstname" type="text">
+        <br><br>
+
+        Your opinion <br> <textarea name="message" rows="10" cols="70"></textarea>
+        <br><br>
+         Who are you?
+        <input list="students" name="ids">
+        <datalist id="students">
+          <option value="Student">
+          <option value="Education">
+          <option value="Research">
+          <option value="Official">
+          <option value="others">
+          
+        </datalist>
+        <br><br>
+         
+         Your Rating
+        <input type="radio" name="review" value="good" checked> Good
+        <input type="radio" name="review" value="satisfactory"> Satisfactory
+        <input type="radio" name="review" value="bad" > Bad
+        <input type="radio" name="review" value="fair"> fair<br><br>
+
+        <button type="button" onclick="alert('thanks!')">Click Me!</button>
+        </fieldset>
+       </form>
+      
+
+      </div>
+
+   
+      <p> Back to MyProfile
+         <%= link_to 'myprofile', bkarki_path %> </p>
+    
+  </div>
+</body>
+</html>

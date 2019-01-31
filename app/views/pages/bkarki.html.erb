@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: linen;
+}
+
+h1 {
+  color: maroon;
+  margin-left: 50px;
+} 
+
+.wrapper{
+    margin : 2px 50px;
+}
+
+.profilepic img{
+    width  : 20% ;
+    height : auto ;
+    background-color: black;
+    border : solid 2px #123212;
+    position : fixed; 
+    border-radius : 80px;
+}
+
+.profilepic{
+  float : left;
+  border : solid 2px #876789;
+
+}
+
+.info{
+  float : right;
+  width : 65%;
+}
+
+.donethings{
+    width  : 20% ;
+    height : auto ;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+* {
+  box-sizing: border-box;
+}
+
+.row img{
+  width : 100%;
+}
+</style>
+</head>
+<body>
+  <div class="wrapper">
+   
+ <h1>Bikram Karki</h2>
+    <div class="profilepic">
+    
+      <%= image_tag("bsk.jpg", :alt => "Bikram Karki") %>
+    </div>
+
+    <div class="info">
+      <h2>About me </h1>
+       <p> My email is bkarki@memphis.eduI love hiking and trekking. I am a great fan of cricket. My home country is Nepal. </p>
+       <p> I was born on Oct 1991. I completed my high school from St. Xaviers College and gruaduated from Pulchowk Engineering Campus
+       to recieve degree of Electronics and Communication Engineering.
+       <p> Hobbies  </p>
+       <ul>
+         <li>Play Piano</li>
+         <li> Read books</li>
+         <li> Watch Cricket</li>
+      </ul> 
+
+      <p> My favourite book is "Mother of the  traitor" by Maxim Gorky. The book is all about a mother and her love for rebellion son
+        and love for the nation. </p>
+        <p>Everything in my computer is perfectly organized in folders within folder, within folder.
+        And I spend a lot of time on such things that no one ever cares about.
+        I have no idea what alcohol tastes like. Seriously.
+        And I never smoked a cigarette.
+And I don’t like ice creams as much as you do.
+ I prefer coffee over tea.</p>
+
+ <h2> Things I have done </h2>
+ <div class="donethings">
+
+
+<div class="row">
+  <div class="column">
+    <%= image_tag("hiking.jpg", :alt => "Bikram Karki") %> 
+  </div>
+  <div class="column">
+    <%= image_tag("pokhara.jpg", :alt => "Bikram Karki") %> 
+  </div>
+    <div class="column">
+    <%= image_tag("rafting.jpg", :alt => "Bikram Karki") %> 
+  </div>
+ 
+</div>
+ </div>
+      <p> Here is my Software Review
+         <%= link_to 'reviewsoftware', reviewsoftware_path %> </p>
+    </div>
+  </div>
+</body>
+</html>
